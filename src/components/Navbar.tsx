@@ -134,7 +134,7 @@ const Navbar = () => {
             <li className="pt-2">
               <Link
                 to="/contact"
-                className="block w-full text-center px-4 py-3 bg-primary text-primary-foreground rounded-lg font-body font-semibold"
+                className="block w-full text-center px-6 py-2 bg-primary text-primary-foreground rounded-lg font-body font-semibold"
               >
                 Book Now
               </Link>
