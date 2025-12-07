@@ -90,30 +90,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
-          {/* Newsletter */}
-          <div>
-            <h4 className="font-heading text-base md:text-lg font-bold mb-3">
-              Stay Updated
-            </h4>
-            <p className="font-body text-cream/70 text-sm md:text-base mb-3">
-              Subscribe to receive inspiration and updates.
-            </p>
-
-            <form className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 px-3 py-2 md:px-4 md:py-3 bg-cream/10 border border-cream/20 rounded-lg font-body text-cream text-sm md:text-base placeholder:text-cream/50 focus:outline-none focus:border-gold transition-colors"
-              />
-              <button
-                type="submit"
-                className="px-3 py-2 md:px-4 md:py-3 bg-gold text-foreground font-body font-semibold text-sm md:text-base rounded-lg hover:bg-gold-light transition-colors"
-              >
-                Join
-              </button>
-            </form>
-          </div>
         </div>
 
         {/* Bottom Bar */}

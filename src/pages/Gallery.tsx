@@ -31,11 +31,11 @@ const Gallery = () => {
       : galleryImages.filter((img) => img.category === activeCategory);
 
   return (
-    <div className="min-h-screen bg-background pt-24 md:pt-28">
+    <div className="min-h-screen bg-background pt-0 md:pt-20">
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="pt-28 pb-16 bg-gradient-to-b from-secondary to-background text-center relative overflow-hidden">
+      <section className="pt-8 pb-8 bg-gradient-to-b from-secondary to-background text-center relative overflow-hidden">
         <span className="inline-block px-3 py-1 bg-gold/10 text-gold text-xs sm:text-sm rounded-full mb-3">
           Our Portfolio
         </span>
@@ -57,8 +57,8 @@ const Gallery = () => {
               key={category}
               onClick={() => setActiveCategory(category)}
               className={`px-4 sm:px-6 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition ${activeCategory === category
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-secondary hover:bg-gold/20 text-foreground"
+                ? "bg-primary text-primary-foreground"
+                : "bg-secondary hover:bg-gold/20 text-foreground"
                 }`}
             >
               {category}

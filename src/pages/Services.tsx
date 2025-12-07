@@ -55,7 +55,12 @@ const Services = () => {
 
       {/* Hero Section */}
       <section className="pt-24 pb-14 bg-gradient-to-b from-secondary/80 to-background relative">
+        <div className="container mx-auto px-4 md:px-8 text-center" />
         <div className="container mx-auto px-4 md:px-8 text-center">
+          <span className="inline-block px-3 py-1 bg-gold/10 text-gold text-xs sm:text-sm font-semibold tracking-wider uppercase rounded-full mb-3">
+            Our Services
+          </span>
+
           <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4">
             Our Premium <span className="text-gold">Services</span>
           </h1>

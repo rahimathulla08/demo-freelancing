@@ -90,9 +90,9 @@ const About = () => {
                 alt="VibeGlow team at work"
                 className="rounded-2xl shadow-elevated"
               />
-              <div className="absolute -bottom-6 -left-6 bg-gold rounded-xl p-5 shadow-gold">
-                <span className="font-heading text-3xl sm:text-4xl font-bold text-foreground block">15+</span>
-                <span className="font-body text-xs sm:text-sm text-foreground/80">Years of Excellence</span>
+              <div className="absolute -bottom-3 sm:-bottom-5 -left-4 sm:-left-6 bg-gold rounded-xl p-2 sm:p-5 shadow-gold">
+                <span className="font-heading text-2xl sm:text-4xl font-bold text-foreground block">15+</span>
+                <span className="font-body text-[10px] sm:text-sm text-foreground/80">Years of Excellence</span>
               </div>
             </div>
           </div>
