@@ -35,8 +35,8 @@ const Gallery = () => {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="pt-8 pb-8 bg-gradient-to-b from-secondary to-background text-center relative overflow-hidden">
-        <span className="inline-block px-3 py-1 bg-gold/10 text-gold text-xs sm:text-sm rounded-full mb-3">
+      <section className="pt-20 sm:pt-16 lg:pt-4 pb-8 bg-gradient-to-b from-secondary to-background text-center relative overflow-hidden">
+        <span className="inline-block px-2 py-1 bg-gold/10 text-gold text-xs sm:text-sm rounded-full mb-3">
           Our Portfolio
         </span>
 

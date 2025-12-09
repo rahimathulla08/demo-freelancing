@@ -18,6 +18,15 @@ const Navbar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
+  // ------------------ Scroll Top Function ------------------
+  const handleScrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  // Sticky navbar background change
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -44,11 +53,9 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
+
           {/* Logo */}
-          <Link
-            to="/"
-            className="flex items-center gap-2 group"
-          >
+          <Link to="/" onClick={handleScrollTop} className="flex items-center gap-2 group">
             <span
               className={cn(
                 "font-heading text-2xl md:text-3xl font-bold tracking-tight transition-colors duration-300",
@@ -65,12 +72,14 @@ const Navbar = () => {
               <li key={link.name}>
                 <Link
                   to={link.href}
+                  onClick={handleScrollTop}
                   className={cn(
                     "px-4 py-2 font-body font-medium text-sm tracking-wide transition-all duration-300 relative group",
                     showTransparent
                       ? "text-cream/90 hover:text-cream"
                       : "text-foreground hover:text-primary",
-                    location.pathname === link.href && (showTransparent ? "text-cream" : "text-primary")
+                    location.pathname === link.href &&
+                    (showTransparent ? "text-cream" : "text-primary")
                   )}
                 >
                   {link.name}
@@ -85,9 +94,10 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* CTA Button */}
+          {/* Desktop CTA */}
           <Link
             to="/contact"
+            onClick={handleScrollTop}
             className={cn(
               "hidden lg:inline-flex items-center px-6 py-2.5 rounded-full font-body font-semibold text-sm transition-all duration-300",
               showTransparent
@@ -122,18 +132,23 @@ const Navbar = () => {
               <li key={link.name}>
                 <Link
                   to={link.href}
+                  onClick={handleScrollTop}
                   className={cn(
                     "block px-4 py-3 font-body font-medium hover:text-primary hover:bg-secondary rounded-lg transition-all",
-                    location.pathname === link.href ? "text-primary bg-secondary" : "text-foreground"
+                    location.pathname === link.href
+                      ? "text-primary bg-secondary"
+                      : "text-foreground"
                   )}
                 >
                   {link.name}
                 </Link>
               </li>
             ))}
+
             <li className="pt-2">
               <Link
                 to="/contact"
+                onClick={handleScrollTop}
                 className="block w-full text-center px-6 py-2 bg-primary text-primary-foreground rounded-lg font-body font-semibold"
               >
                 Book Now
@@ -141,6 +156,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+
       </div>
     </nav>
   );

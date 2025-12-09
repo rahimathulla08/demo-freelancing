@@ -28,7 +28,7 @@ const HeroSection = () => {
 
         {/* Tagline */}
         <p
-          className="font-body text-gold text-xs sm:text-sm md:text-base tracking-[0.3em] uppercase mb-5 opacity-0 animate-fade-in-up"
+          className="font-body text-gold text-xs sm:text-sm md:text-base tracking-[0.1em] uppercase mb-5 opacity-0 animate-fade-in-up whitespace-nowrap"
           style={{ animationDelay: "0.2s" }}
         >
           ✦ Traditional • Elegant • Memorable ✦
